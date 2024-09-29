@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="Eva-unit-01">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://eva-unit-01.github.io/2023/04/18/python-learning/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="内容摘自[kaggle](Learn Python Tutorials | Kaggle )  Hello, Python！Hello python函数调用使用括号   () 变量赋值使用 &#x3D;，并且不需要事先声明变量名称以及类型 注释使用# Python每句代码后没有标点分隔；因此区分代码块靠的是代码的缩进。4个空格为一个单位。例如： 12345if spam_amount &gt; 0:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python学习">
+<meta property="og:url" content="https://eva-unit-01.github.io/2023/04/18/python-learning/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="内容摘自[kaggle](Learn Python Tutorials | Kaggle )  Hello, Python！Hello python函数调用使用括号   () 变量赋值使用 &#x3D;，并且不需要事先声明变量名称以及类型 注释使用# Python每句代码后没有标点分隔；因此区分代码块靠的是代码的缩进。4个空格为一个单位。例如： 12345if spam_amount &gt; 0:">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-04-18T08:32:23.000Z">
+<meta property="article:modified_time" content="2023-04-18T09:01:12.000Z">
+<meta property="article:author" content="eva-unit-01">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/neko.ico" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/neko.ico">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/neko.ico">
+    <!--- Page Info-->
+    
+    <title>
+        
+            Python学习 -
+        
+        Eva-unit-01&#39;s Studio
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/assets/build/styles.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+    
+    
+    
+    
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"eva-unit-01.github.io","root":"/","language":"zh-CN"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Eva-unit-01's Studio","subtitle":{"text":["Some day it will come"],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":false,"style":"default","links":{"github":null,"instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.7.1","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"auto","excerpt_length":200,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+
+    <div class="navbar-content ">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                Eva-unit-01&#39;s Studio
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    首页
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                首页
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">21</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">22</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Python学习</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/eva-unit-01.jpg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">Eva-unit-01</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv3</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2023-04-18 16:32:23</span>
+        <span class="mobile">2023-04-18 16:32:23</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2023-04-18 17:01:12</span>
+            <span class="mobile">2023-04-18 17:01:12</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Code/">Code</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fa-regular fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Python/">Python</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <blockquote>
+<p>内容摘自[kaggle](<a class="link"   target="_blank" rel="noopener" href="https://www.kaggle.com/learn/python" >Learn Python Tutorials | Kaggle <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>)</p>
+</blockquote>
+<h2 id="Hello-Python！"><a href="#Hello-Python！" class="headerlink" title="Hello, Python！"></a>Hello, Python！</h2><h3 id="Hello-python"><a href="#Hello-python" class="headerlink" title="Hello python"></a>Hello python</h3><p>函数调用使用括号   <code>()</code></p>
+<p>变量赋值使用 <code>=</code>，并且不需要事先声明变量名称以及类型</p>
+<p>注释使用<code>#</code></p>
+<p>Python每句代码后没有标点分隔；因此区分代码块靠的是代码的缩进。4个空格为一个单位。例如：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> spam_amount &gt; <span class="number">0</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;But I don&#x27;t want ANY spam!&quot;</span>)</span><br><span class="line"></span><br><span class="line">viking_song = <span class="string">&quot;Spam Spam Spam&quot;</span></span><br><span class="line"><span class="built_in">print</span>(viking_song)</span><br></pre></td></tr></table></figure></div>
+
+<p>其中if判断之后的<code>:</code>表明了接下来有一个新的代码块。</p>
+<p>字符串（string）用单引号或者双引号标注。但如果字符串中已经有单引号了，就应当用双引号来标注字符串</p>
+<p><code>*</code>可以作用在字符串上，得到重复的字符串</p>
+<h3 id="数字与计算"><a href="#数字与计算" class="headerlink" title="数字与计算"></a>数字与计算</h3><p><code>type</code>是一个函数，查看变量类型，比如<code>int</code>,<code>float</code></p>
+<p>数字计算操作有：</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th align="left">Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>a + b</code></td>
+<td align="left">Addition</td>
+<td align="left">Sum of <code>a</code> and <code>b</code></td>
+</tr>
+<tr>
+<td><code>a - b</code></td>
+<td align="left">Subtraction</td>
+<td align="left">Difference of <code>a</code> and <code>b</code></td>
+</tr>
+<tr>
+<td><code>a * b</code></td>
+<td align="left">Multiplication</td>
+<td align="left">Product of <code>a</code> and <code>b</code></td>
+</tr>
+<tr>
+<td><code>a / b</code></td>
+<td align="left">True division</td>
+<td align="left">Quotient of <code>a</code> and <code>b</code></td>
+</tr>
+<tr>
+<td><code>a // b</code></td>
+<td align="left">Floor division</td>
+<td align="left">Quotient of <code>a</code> and <code>b</code>, removing fractional parts</td>
+</tr>
+<tr>
+<td><code>a % b</code></td>
+<td align="left">Modulus</td>
+<td align="left">Integer remainder after division of <code>a</code> by <code>b</code></td>
+</tr>
+<tr>
+<td><code>a ** b</code></td>
+<td align="left">Exponentiation</td>
+<td align="left"><code>a</code> raised to the power of <code>b</code></td>
+</tr>
+<tr>
+<td><code>-a</code></td>
+<td align="left">Negation</td>
+<td align="left">The negative of <code>a</code></td>
+</tr>
+</tbody></table>
+<h4 id="自带的与数字有关的函数"><a href="#自带的与数字有关的函数" class="headerlink" title="自带的与数字有关的函数"></a>自带的与数字有关的函数</h4><p><code>min</code> ，<code>max</code>，<code>abs</code>；<code>int</code>，<code>float</code>能转换数字的类型（甚至作用在字符串上），<code>int</code>作用在浮点数上只会取整数部分</p>
+<h2 id="函数与帮助"><a href="#函数与帮助" class="headerlink" title="函数与帮助"></a>函数与帮助</h2><h3 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h3><p>比如，<code>help(round)</code></p>
+<h3 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h3><p>例如：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">least_difference</span>(<span class="params">a, b, c</span>):</span><br><span class="line">    diff1 = <span class="built_in">abs</span>(a - b)</span><br><span class="line">    diff2 = <span class="built_in">abs</span>(b - c)</span><br><span class="line">    diff3 = <span class="built_in">abs</span>(a - c) </span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">min</span>(diff1, diff2, diff3)</span><br></pre></td></tr></table></figure></div>
+
+<p>用<code>def</code>来定义函数，括号表示接受的变量。在<code>def</code>一栏最后还有一个冒号<code>:</code>冒号下面的缩进代码块是该函数的代码，代码块中<code>return</code>用来返回值</p>
+<blockquote>
+<p>python允许在参数列表中使用尾部逗号，例如：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="built_in">print</span>(</span><br><span class="line">&gt;least_difference(<span class="number">1</span>, <span class="number">10</span>, <span class="number">100</span>),</span><br><span class="line">&gt;least_difference(<span class="number">1</span>, <span class="number">10</span>, <span class="number">10</span>),</span><br><span class="line">&gt;least_difference(<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>), <span class="comment"># Python allows trailing commas in &gt;argument lists. How nice is that?</span></span><br><span class="line">&gt;)</span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<h3 id="Docstrings"><a href="#Docstrings" class="headerlink" title="Docstrings"></a>Docstrings</h3><p>用户自定义函数，help无法返回描述。但是可以在定义函数时添加<code>docstring</code></p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">least_difference</span>(<span class="params">a, b, c</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;Return the smallest difference between any two numbers</span></span><br><span class="line"><span class="string">    among a, b and c.</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; least_difference(1, 5, -5)</span></span><br><span class="line"><span class="string">    4</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    diff1 = <span class="built_in">abs</span>(a - b)</span><br><span class="line">    diff2 = <span class="built_in">abs</span>(b - c)</span><br><span class="line">    diff3 = <span class="built_in">abs</span>(a - c)</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">min</span>(diff1, diff2, diff3)</span><br></pre></td></tr></table></figure></div>
+
+<p>docstring是一个三引号的字符串（可能跨越多行），紧跟在一个函数的标题之后。 当我们在一个函数上调用help()时，它会被显示。</p>
+<blockquote>
+<p>上述例子中docstring最后两行是一个函数的调用与结果，(<code>&gt;&gt;&gt;</code>是对 Python 交互式 shell 中使用的命令提示符的引用) Python 并不运行这个例子的调用–它只是为了读者的便利而存在。</p>
+</blockquote>
+<h3 id="无返回的函数"><a href="#无返回的函数" class="headerlink" title="无返回的函数"></a>无返回的函数</h3><p> 可以看作返回为<code>None</code></p>
+<h3 id="函数参数的默认值"><a href="#函数参数的默认值" class="headerlink" title="函数参数的默认值"></a>函数参数的默认值</h3><p>我们在定义函数的时候可以给变量声明默认值，例如<code>print</code>函数。</p>
+<h3 id="函数的复合"><a href="#函数的复合" class="headerlink" title="函数的复合"></a>函数的复合</h3><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">mult_by_five</span>(<span class="params">x</span>):</span><br><span class="line">    <span class="keyword">return</span> <span class="number">5</span> * x</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">call</span>(<span class="params">fn, arg</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;Call fn on arg&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">return</span> fn(arg)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">squared_call</span>(<span class="params">fn, arg</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;Call fn on the result of calling fn on arg&quot;&quot;&quot;</span></span><br><span class="line">    <span class="keyword">return</span> fn(fn(arg))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(</span><br><span class="line">    call(mult_by_five, <span class="number">1</span>),</span><br><span class="line">    squared_call(mult_by_five, <span class="number">1</span>), </span><br><span class="line">    sep=<span class="string">&#x27;\n&#x27;</span>, <span class="comment"># &#x27;\n&#x27; is the newline character - it starts a new line</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="布尔变量与条件判断"><a href="#布尔变量与条件判断" class="headerlink" title="布尔变量与条件判断"></a>布尔变量与条件判断</h2><h3 id="布尔变量"><a href="#布尔变量" class="headerlink" title="布尔变量"></a>布尔变量</h3><p>Python有一种变量类型叫做<code>bool</code>，有两种值：<code>True</code>或者<code>False</code></p>
+<h3 id="布尔运算"><a href="#布尔运算" class="headerlink" title="布尔运算"></a>布尔运算</h3><h4 id="Comparison-Operations"><a href="#Comparison-Operations" class="headerlink" title="Comparison Operations"></a>Comparison Operations</h4><table>
+<thead>
+<tr>
+<th align="left">Operation</th>
+<th align="left">Description</th>
+<th align="left"></th>
+<th align="left">Operation</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>a == b</code></td>
+<td align="left"><code>a</code> equal to <code>b</code></td>
+<td align="left"></td>
+<td align="left"><code>a != b</code></td>
+<td align="left"><code>a</code> not equal to <code>b</code></td>
+</tr>
+<tr>
+<td align="left"><code>a &lt; b</code></td>
+<td align="left"><code>a</code> less than <code>b</code></td>
+<td align="left"></td>
+<td align="left"><code>a &gt; b</code></td>
+<td align="left"><code>a</code> greater than <code>b</code></td>
+</tr>
+<tr>
+<td align="left"><code>a &lt;= b</code></td>
+<td align="left"><code>a</code> less than or equal to <code>b</code></td>
+<td align="left"></td>
+<td align="left"><code>a &gt;= b</code></td>
+<td align="left"><code>a</code> greater than or equal to <code>b</code></td>
+</tr>
+</tbody></table>
+<h3 id="布尔运算的复合"><a href="#布尔运算的复合" class="headerlink" title="布尔运算的复合"></a>布尔运算的复合</h3><p><code>and</code>，<code>or</code>，<code>not</code>为交，并，非运算。</p>
+<h3 id="条件判断"><a href="#条件判断" class="headerlink" title="条件判断"></a>条件判断</h3><p><code>if</code>，<code>elif</code>，<code>else</code>用来判断条件。</p>
+<blockquote>
+<p>在条件判断后应当记得添加冒号，即<code>if bool_varible : </code></p>
+</blockquote>
+<h3 id="布尔化"><a href="#布尔化" class="headerlink" title="布尔化"></a>布尔化</h3><p>就像<code>int</code>，<code>float</code>，<code>str</code>一样，<code>bool</code>也能将其他变量转换为布尔类型。非0数，非空字符都将转换为<code>True</code>。</p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>列表用中括号标注。列表里面的变量也能是列表，同一个列表里面的变量类型可以不同，比如整数与字符串。</p>
+<h3 id="列表的序"><a href="#列表的序" class="headerlink" title="列表的序"></a>列表的序</h3><p>列表里的变量从0开始计数，访问列表中的变量时，序数用中括号括起来。列表序数可以为负数，但是从-1开始计数，即，-n表示从右向左数第n个。</p>
+<h3 id="列表截断"><a href="#列表截断" class="headerlink" title="列表截断"></a>列表截断</h3><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">planets = [<span class="string">&#x27;Mercury&#x27;</span>, <span class="string">&#x27;Venus&#x27;</span>, <span class="string">&#x27;Earth&#x27;</span>, <span class="string">&#x27;Mars&#x27;</span>, <span class="string">&#x27;Jupiter&#x27;</span>, <span class="string">&#x27;Saturn&#x27;</span>, <span class="string">&#x27;Uranus&#x27;</span>, <span class="string">&#x27;Neptune&#x27;</span>]</span><br><span class="line">planets[:<span class="number">3</span>]</span><br><span class="line">planets[<span class="number">3</span>:]</span><br><span class="line">planets[<span class="number">1</span>:-<span class="number">1</span>]</span><br></pre></td></tr></table></figure></div>
+
+<p>输出</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">&#x27;Mercury&#x27;</span>, <span class="string">&#x27;Venus&#x27;</span>, <span class="string">&#x27;Earth&#x27;</span>]</span><br><span class="line">[<span class="string">&#x27;Mars&#x27;</span>, <span class="string">&#x27;Jupiter&#x27;</span>, <span class="string">&#x27;Saturn&#x27;</span>, <span class="string">&#x27;Uranus&#x27;</span>, <span class="string">&#x27;Neptune&#x27;</span>]</span><br><span class="line">[<span class="string">&#x27;Venus&#x27;</span>, <span class="string">&#x27;Earth&#x27;</span>, <span class="string">&#x27;Mars&#x27;</span>, <span class="string">&#x27;Jupiter&#x27;</span>, <span class="string">&#x27;Saturn&#x27;</span>, <span class="string">&#x27;Uranus&#x27;</span>]</span><br></pre></td></tr></table></figure></div>
+
+<p>即，左闭右开区间的方式截断。</p>
+<h3 id="修改列表"><a href="#修改列表" class="headerlink" title="修改列表"></a>修改列表</h3><p>直接赋值即可。</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">planets[<span class="number">3</span>] = <span class="string">&#x27;Malacandra&#x27;</span></span><br><span class="line">planets[:<span class="number">3</span>] = [<span class="string">&#x27;Mur&#x27;</span>, <span class="string">&#x27;Vee&#x27;</span>, <span class="string">&#x27;Ur&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(planets)</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">&#x27;Mur&#x27;</span>, <span class="string">&#x27;Vee&#x27;</span>, <span class="string">&#x27;Ur&#x27;</span>, <span class="string">&#x27;Malacandra&#x27;</span>, <span class="string">&#x27;Jupiter&#x27;</span>, <span class="string">&#x27;Saturn&#x27;</span>, <span class="string">&#x27;Uranus&#x27;</span>, <span class="string">&#x27;Neptune&#x27;</span>]</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="列表相关的函数"><a href="#列表相关的函数" class="headerlink" title="列表相关的函数"></a>列表相关的函数</h3><p><code>len</code>，<code>sorted</code>，<code>sum</code>，<code>max</code>，<code>in</code></p>
+<p><code>len</code>求列表长度；<code>sorted</code>按字母排序，<code>sum</code>，<code>max</code>是求和，求最大值，<code>in</code>来判断元素是否在列表中，返回布尔变量</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;Earth&quot;</span> <span class="keyword">in</span> planets</span><br></pre></td></tr></table></figure></div>
+
+<p>返回<code>True</code></p>
+<h3 id="插曲：object"><a href="#插曲：object" class="headerlink" title="插曲：object"></a>插曲：object</h3><p>I’ve used the term ‘object’ a lot so far - you may have even read that <em>everything</em> in Python is an object. What does that mean?</p>
+<p>In short, objects carry some things around with them. You access that stuff using Python’s dot syntax.</p>
+<p>For example, numbers in Python carry around an associated variable called <code>imag</code> representing their imaginary part. (You’ll probably never need to use this unless you’re doing some very weird math.)</p>
+<p>The things an object carries around can also include functions. A function attached to an object is called a <strong>method</strong>. (Non-function things attached to an object, such as <code>imag</code>, are called <em>attributes</em>).</p>
+<p>For example, numbers have a method called <code>bit_length</code>. Again, we access it using dot syntax:</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x.bit_length</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="查看object的method"><a href="#查看object的method" class="headerlink" title="查看object的method"></a>查看object的method</h4><p>可以用<code>help()</code>作用在object名称上来查看。</p>
+<h3 id="列表的一些常用method"><a href="#列表的一些常用method" class="headerlink" title="列表的一些常用method"></a>列表的一些常用method</h3><h4 id="list-append"><a href="#list-append" class="headerlink" title="list.append"></a>list.append</h4><p>在列表最后添加一个元素，该函数没有返回值。</p>
+<h4 id="list-pop"><a href="#list-pop" class="headerlink" title="list.pop"></a>list.pop</h4><p>删除并返回列表在最后的元素。</p>
+<h4 id="list-index"><a href="#list-index" class="headerlink" title="list.index"></a>list.index</h4><p>返回特定变量在列表中的列表序。</p>
+<h3 id="Tuples"><a href="#Tuples" class="headerlink" title="Tuples"></a>Tuples</h3><p><code>tuple</code>和<code>list</code>几乎相同，除了两点：</p>
+<ol>
+<li><code>tuple</code>用小括号而非中括号，甚至可以不用括号：</li>
+</ol>
+<blockquote>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;t = (<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">&gt;t = <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span> <span class="comment"># equivalent to above</span></span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<ol start="2">
+<li><code>tuple</code>无法修改。</li>
+</ol>
+<p>最后用<code>tuple</code>可以来交换变量值：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">1</span></span><br><span class="line">b = <span class="number">0</span></span><br><span class="line">a, b = b, a</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="循环-and-list-comprehentions"><a href="#循环-and-list-comprehentions" class="headerlink" title="循环 and list comprehentions"></a>循环 and list comprehentions</h2><h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><h4 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h4><p><code>for</code>循环的例子：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">planets = [<span class="string">&#x27;Mercury&#x27;</span>, <span class="string">&#x27;Venus&#x27;</span>, <span class="string">&#x27;Earth&#x27;</span>, <span class="string">&#x27;Mars&#x27;</span>, <span class="string">&#x27;Jupiter&#x27;</span>, <span class="string">&#x27;Saturn&#x27;</span>, <span class="string">&#x27;Uranus&#x27;</span>, <span class="string">&#x27;Neptune&#x27;</span>]</span><br><span class="line"><span class="keyword">for</span> planet <span class="keyword">in</span> planets:</span><br><span class="line">    <span class="built_in">print</span>(planet, end=<span class="string">&#x27; &#x27;</span>) <span class="comment"># print all on same line</span></span><br></pre></td></tr></table></figure></div>
+
+<p>上例中用<code>in</code>连接了变量名（<code>planet</code>）和变量循环的范围（<code>planets</code>）。在<code>in</code>右侧，循环范围可以是任何可以迭代的<code>object</code>，例如<code>list</code>,<code>tuple</code>，甚至是<code>string</code>：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">&#x27;steganograpHy is the practicE of conceaLing a file, message, image, or video within another fiLe, message, image, Or video.&#x27;</span></span><br><span class="line">msg = <span class="string">&#x27;&#x27;</span></span><br><span class="line"><span class="comment"># print all the uppercase letters in s, one at a time</span></span><br><span class="line"><span class="keyword">for</span> char <span class="keyword">in</span> s:</span><br><span class="line">    <span class="keyword">if</span> char.isupper():</span><br><span class="line">        <span class="built_in">print</span>(char, end=<span class="string">&#x27;&#x27;</span>)        </span><br></pre></td></tr></table></figure></div>
+
+<blockquote>
+<p><code>str</code>字符<code>object</code>有一个<code>method</code>叫做<code>isupper</code>，当字符为大写的时候返回<code>True</code></p>
+</blockquote>
+<h5 id="range"><a href="#range" class="headerlink" title="range()"></a>range()</h5><p><code>range()</code>是一个返回一个数字列表的函数。比如，<code>range(2)=[0,1]</code>在循环语句中经常使用。</p>
+<h4 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h4><p>while循环的例子：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">i = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> i &lt; <span class="number">10</span>:</span><br><span class="line">    <span class="built_in">print</span>(i, end=<span class="string">&#x27; &#x27;</span>)</span><br><span class="line">    i += <span class="number">1</span> <span class="comment"># increase the value of i by 1</span></span><br></pre></td></tr></table></figure></div>
+
+<p>输出：<code>0 1 2 3 4 5 6 7 8 9 </code></p>
+<h3 id="list-comprehentions"><a href="#list-comprehentions" class="headerlink" title="list comprehentions"></a>list comprehentions</h3><p>例子：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">squares = [n**<span class="number">2</span> <span class="keyword">for</span> n <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>)]</span><br><span class="line">squares</span><br></pre></td></tr></table></figure></div>
+
+<p>输出：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">16</span>, <span class="number">25</span>, <span class="number">36</span>, <span class="number">49</span>, <span class="number">64</span>, <span class="number">81</span>]</span><br></pre></td></tr></table></figure></div>
+
+<p>利用python的这个特性，我们可以让代码简单很多：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">count_negatives</span>(<span class="params">nums</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;Return the number of negative numbers in the given list.</span></span><br><span class="line"><span class="string">    </span></span><br><span class="line"><span class="string">    &gt;&gt;&gt; count_negatives([5, -1, -2, 0, 3])</span></span><br><span class="line"><span class="string">    2</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># Reminder: in the &quot;booleans and conditionals&quot; exercises, we learned about a quirk of </span></span><br><span class="line">    <span class="comment"># Python where it calculates something like True + True + False + True to be equal to 3.</span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">sum</span>([num &lt; <span class="number">0</span> <span class="keyword">for</span> num <span class="keyword">in</span> nums])</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="字符串与字典"><a href="#字符串与字典" class="headerlink" title="字符串与字典"></a>字符串与字典</h2><h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>Python真正的闪光点是对字符串的操作。</p>
+<h4 id="字符串语法"><a href="#字符串语法" class="headerlink" title="字符串语法"></a>字符串语法</h4><p>前面已经提到过，字符串可以用单引号<code>&#39;&#39;</code>或者双引号<code>&quot;&quot;</code>来标注，来避免混淆：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Pluto&#x27;s a planet&quot;</span>)<span class="comment">#双引号来避免混淆</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;Pluto\&#x27;s a planet&#x27;</span>)<span class="comment">#或者使用转义字符反斜杠\</span></span><br></pre></td></tr></table></figure></div>
+
+<p>The table below summarizes some important uses of the backslash character.</p>
+<table>
+<thead>
+<tr>
+<th align="left">What you type…</th>
+<th align="left">What you get</th>
+<th align="left">example</th>
+<th align="left"><code>print(example)</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>\&#39;</code></td>
+<td align="left"><code>&#39;</code></td>
+<td align="left"><code>&#39;What\&#39;s up?&#39;</code></td>
+<td align="left"><code>What&#39;s up?</code></td>
+</tr>
+<tr>
+<td align="left"><code>\&quot;</code></td>
+<td align="left"><code>&quot;</code></td>
+<td align="left"><code>&quot;That&#39;s \&quot;cool\&quot;&quot;</code></td>
+<td align="left"><code>That&#39;s &quot;cool&quot;</code></td>
+</tr>
+<tr>
+<td align="left"><code>\\</code></td>
+<td align="left"><code>\</code></td>
+<td align="left"><code>&quot;Look, a mountain: /\\&quot;</code></td>
+<td align="left"><code>Look, a mountain: /\</code></td>
+</tr>
+<tr>
+<td align="left"><code>\n</code></td>
+<td align="left"></td>
+<td align="left"><code>&quot;1\n2 3&quot;</code></td>
+<td align="left"><code>1</code>                                                <code>2 3</code></td>
+</tr>
+</tbody></table>
+<p>Python的三引号（注意是3个双引号，就像docstring里面那样）可以用来标注含有回车的字符串；当然，在普通的字符串里用<code>\n</code>也是一样的。</p>
+<h4 id="字符串也是列表"><a href="#字符串也是列表" class="headerlink" title="字符串也是列表"></a>字符串也是列表</h4><p>就像之前在循环一节中看到的，对字符串也能像对列表一样操作。事实上，几乎所有对列表的操作，都能作用在字符串上。（比如列表序，列表分割，<code>len</code>等函数）。但字符串与列表的不同在于字符串是<em>immutable</em>（不可变的）我们不能像修改列表一样修改字符串。</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">planet=<span class="string">&#x27;pluto&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(planet[<span class="number">0</span>])</span><br><span class="line">planet[<span class="number">0</span>]=<span class="string">&#x27;b&#x27;</span></span><br><span class="line"><span class="comment"># planet.append doesn&#x27;t work either</span></span><br></pre></td></tr></table></figure></div>
+
+<p>输出为：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">p</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;d:\�������\python����\test.py&quot;</span>, line <span class="number">4</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    planet[<span class="number">0</span>]=<span class="string">&#x27;b&#x27;</span></span><br><span class="line">TypeError: <span class="string">&#x27;str&#x27;</span> <span class="built_in">object</span> does <span class="keyword">not</span> support item assignment</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="字符串的method"><a href="#字符串的method" class="headerlink" title="字符串的method"></a>字符串的method</h4><p>就像<code>list</code>一样，字符串类型<code>str</code>也有很多method。比如</p>
+<ol>
+<li><code>.upper</code>（转换为大写）</li>
+<li><code>.lower</code> （转换为小写）</li>
+<li><code>.index</code>（返回子字符串的第一个字符的列表序）</li>
+<li><code>.startswith</code>（字符串是否以此为开头）</li>
+<li><code>.endswith</code>（字符串是否以此结尾）</li>
+<li><code>.split</code>将字符串转换成一个由更细小的字符串组成的列表，默认在空格处断开。也可以指定断开处的字符：</li>
+</ol>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">datestr = <span class="string">&#x27;1956-01-31&#x27;</span></span><br><span class="line">year, month, day = datestr.split(<span class="string">&#x27;-&#x27;</span>)</span><br></pre></td></tr></table></figure></div>
+
+<ol start="7">
+<li><code>.join</code>将一个由字符串组成的列表连接成一个更长的列表，用调用<code>.join</code>的字符串来连接</li>
+</ol>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;/&#x27;</span>.join([month, day, year])</span><br></pre></td></tr></table></figure></div>
+
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;/&#x27;</span>.join([month, day, year])</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="使用-format-来构造字符串"><a href="#使用-format-来构造字符串" class="headerlink" title="使用.format()来构造字符串"></a>使用<code>.format()</code>来构造字符串</h4><p>Python可以用<code>+</code>来连接两个字符串。但有时显得很麻烦。这时候可以使用<code>.format</code>：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">planet=<span class="string">&quot;Pluto&quot;</span></span><br><span class="line">position=<span class="number">9</span></span><br><span class="line">planet + <span class="string">&quot;, you&#x27;ll always be the &quot;</span> + <span class="built_in">str</span>(position) + <span class="string">&quot;th planet to me.&quot;</span></span><br><span class="line"><span class="comment">#上面的代码和下面的是等价的</span></span><br><span class="line"><span class="string">&quot;&#123;&#125;, you&#x27;ll always be the &#123;&#125;th planet to me.&quot;</span>.<span class="built_in">format</span>(planet, position)</span><br></pre></td></tr></table></figure></div>
+
+<p>注意使用<code>.format</code>的代码中，不需要对<code>position</code>进行类型转换。</p>
+<p>其中的花括号也能加入别的东西，比如：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">planet=<span class="string">&quot;Pluto&quot;</span></span><br><span class="line">pluto_mass = <span class="number">1.303</span> * <span class="number">10</span>**<span class="number">22</span></span><br><span class="line">earth_mass = <span class="number">5.9722</span> * <span class="number">10</span>**<span class="number">24</span></span><br><span class="line">population = <span class="number">52910390</span></span><br><span class="line"><span class="comment">#         2 decimal points,   3 decimal points, format as percent,     separate with commas</span></span><br><span class="line"><span class="string">&quot;&#123;&#125; weighs about &#123;:.2&#125; kilograms (&#123;:.3%&#125; of Earth&#x27;s mass). It is home to &#123;:,&#125; Plutonians.&quot;</span>.<span class="built_in">format</span>(</span><br><span class="line">    planet, pluto_mass, pluto_mass / earth_mass, population,</span><br><span class="line">)</span><br></pre></td></tr></table></figure></div>
+
+<p>输出结果是：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;Pluto weighs about 1.3e+22 kilograms (0.218% of Earth&#x27;s mass). It is home to 52,910,390 Plutonians.&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<hr>
+<p>又比如：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Referring to format() arguments by index, starting from 0</span></span><br><span class="line">s = <span class="string">&quot;&quot;&quot;Pluto&#x27;s a &#123;0&#125;.</span></span><br><span class="line"><span class="string">No, it&#x27;s a &#123;1&#125;.</span></span><br><span class="line"><span class="string">&#123;0&#125;!</span></span><br><span class="line"><span class="string">&#123;1&#125;!&quot;&quot;&quot;</span>.<span class="built_in">format</span>(<span class="string">&#x27;planet&#x27;</span>, <span class="string">&#x27;dwarf planet&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure></div>
+
+<p>输出是</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Pluto&#x27;s a planet.</span><br><span class="line">No, it&#x27;s a dwarf planet.</span><br><span class="line">planet!</span><br><span class="line">dwarf planet!</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><p>字典（dictionaries）是Python自带的用来将<code>key</code>映射成<code>value</code>的数据结构。</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">numbers = &#123;<span class="string">&#x27;one&#x27;</span>:<span class="number">1</span>, <span class="string">&#x27;two&#x27;</span>:<span class="number">2</span>, <span class="string">&#x27;three&#x27;</span>:<span class="number">3</span>&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>在这种情况下，<code>&#39;one&#39;</code>，<code>&#39;two&#39;</code>和<code>&#39;three&#39;</code>是键，1,2和3是它们的相应值。</p>
+<p>字典定义时用花括号标注，但查询，修改，添加字典时，就像列表以及字符串那样使用中括号：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(numbers[<span class="string">&#x27;one&#x27;</span>])</span><br><span class="line">numbers[<span class="string">&#x27;eleven&#x27;</span>] = <span class="number">11</span></span><br><span class="line">numbers[<span class="string">&#x27;one&#x27;</span>] = <span class="string">&#x27;Pluto&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(numbers)</span><br></pre></td></tr></table></figure></div>
+
+<p>输出</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">&#123;&#x27;one&#x27;: &#x27;Pluto&#x27;, &#x27;two&#x27;: 2, &#x27;three&#x27;: 3, &#x27;eleven&#x27;: 11&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="dictionary-comprehention"><a href="#dictionary-comprehention" class="headerlink" title="dictionary comprehention"></a>dictionary comprehention</h4><p>类似list comprehention：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">planets = [<span class="string">&#x27;Mercury&#x27;</span>, <span class="string">&#x27;Venus&#x27;</span>, <span class="string">&#x27;Earth&#x27;</span>, <span class="string">&#x27;Mars&#x27;</span>, <span class="string">&#x27;Jupiter&#x27;</span>, <span class="string">&#x27;Saturn&#x27;</span>, <span class="string">&#x27;Uranus&#x27;</span>, <span class="string">&#x27;Neptune&#x27;</span>]</span><br><span class="line">planet_to_initial = &#123;planet: planet[<span class="number">0</span>] <span class="keyword">for</span> planet <span class="keyword">in</span> planets&#125;</span><br><span class="line"><span class="built_in">print</span>(planet_to_initial)</span><br></pre></td></tr></table></figure></div>
+
+<p>输出为</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#x27;Mercury&#x27;: &#x27;M&#x27;, &#x27;Venus&#x27;: &#x27;V&#x27;, &#x27;Earth&#x27;: &#x27;E&#x27;, &#x27;Mars&#x27;: &#x27;M&#x27;, &#x27;Jupiter&#x27;: &#x27;J&#x27;, &#x27;Saturn&#x27;: &#x27;S&#x27;, &#x27;Uranus&#x27;: &#x27;U&#x27;, &#x27;Neptune&#x27;: &#x27;N&#x27;&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>in</code>也能告诉我们一个<code>key</code>是否在字典中：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;Saturn&#x27;</span> <span class="keyword">in</span> planet_to_initial</span><br></pre></td></tr></table></figure></div>
+
+<blockquote>
+<p><code>in</code>不能告诉<code>value</code>是否在字典中。比如，<code>&#39;M&#39; in planet_to_initial</code>的值为<code>False</code></p>
+</blockquote>
+<p><code>for</code>也能在字典中循环，循环的范围为字典的所有<code>key</code>：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> k <span class="keyword">in</span> numbers:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;&#123;&#125; = &#123;&#125;&quot;</span>.<span class="built_in">format</span>(k, numbers[k]))</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="dictionary的method"><a href="#dictionary的method" class="headerlink" title="dictionary的method"></a>dictionary的method</h4><p>我们能通过<code>.keys()</code>，<code>.values()</code>来访问字典中的<code>key</code>与<code>value</code>：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Get all the initials, sort them alphabetically, and put them in a space-separated string.</span></span><br><span class="line"><span class="string">&#x27; &#x27;</span>.join(<span class="built_in">sorted</span>(planet_to_initial.values()))</span><br></pre></td></tr></table></figure></div>
+
+<p>输出为：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x27;E J M M N S U V&#x27;</span><br></pre></td></tr></table></figure></div>
+
+<p><code>.items()</code>可以让我们同时访问一组key与value。(In Python jargon, an <strong>item</strong> refers to a key, value pair)：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> planet, initial <span class="keyword">in</span> planet_to_initial.items():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;&#123;&#125; begins with \&quot;&#123;&#125;\&quot;&quot;</span>.<span class="built_in">format</span>(planet.rjust(<span class="number">10</span>), initial))</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="外部库的使用"><a href="#外部库的使用" class="headerlink" title="外部库的使用"></a>外部库的使用</h2><h3 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h3><p>我们已经学习了很多Python自带的变量类型以及函数；但Python最好的一点在于，Python有大量的高质量自定义库。有些库是标准库，可以直接使用；其他的库也能很方便的添加，即便他们不是Python自带的。</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math <span class="comment">#导入标准库中的math</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;It&#x27;s math! It has type &#123;&#125;&quot;</span>.<span class="built_in">format</span>(<span class="built_in">type</span>(math)))</span><br></pre></td></tr></table></figure></div>
+
+<p>输出为：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">It&#x27;s math! It has type &lt;class &#x27;module&#x27;&gt;</span><br></pre></td></tr></table></figure></div>
+
+<p>不难看出，<code>math</code>的类型是<code>module</code>。一个<code>module</code>是一系列变量的集合（或者可以叫做<code>namespace</code>）用<code>dir()</code>可以访问<code>math</code>里面的变量：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="built_in">dir</span>(math))</span><br></pre></td></tr></table></figure></div>
+
+<p>输出：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#x27;__doc__&#x27;, &#x27;__file__&#x27;, &#x27;__loader__&#x27;, &#x27;__name__&#x27;, &#x27;__package__&#x27;, &#x27;__spec__&#x27;, &#x27;acos&#x27;, &#x27;acosh&#x27;, &#x27;asin&#x27;, &#x27;asinh&#x27;, &#x27;atan&#x27;, &#x27;atan2&#x27;, &#x27;atanh&#x27;, &#x27;ceil&#x27;, &#x27;copysign&#x27;, &#x27;cos&#x27;, &#x27;cosh&#x27;, &#x27;degrees&#x27;, &#x27;e&#x27;, &#x27;erf&#x27;, &#x27;erfc&#x27;, &#x27;exp&#x27;, &#x27;expm1&#x27;, &#x27;fabs&#x27;, &#x27;factorial&#x27;, &#x27;floor&#x27;, &#x27;fmod&#x27;, &#x27;frexp&#x27;, &#x27;fsum&#x27;, &#x27;gamma&#x27;, &#x27;gcd&#x27;, &#x27;hypot&#x27;, &#x27;inf&#x27;, &#x27;isclose&#x27;, &#x27;isfinite&#x27;, &#x27;isinf&#x27;, &#x27;isnan&#x27;, &#x27;ldexp&#x27;, &#x27;lgamma&#x27;, &#x27;log&#x27;, &#x27;log10&#x27;, &#x27;log1p&#x27;, &#x27;log2&#x27;, &#x27;modf&#x27;, &#x27;nan&#x27;, &#x27;pi&#x27;, &#x27;pow&#x27;, &#x27;radians&#x27;, &#x27;remainder&#x27;, &#x27;sin&#x27;, &#x27;sinh&#x27;, &#x27;sqrt&#x27;, &#x27;tan&#x27;, &#x27;tanh&#x27;, &#x27;tau&#x27;, &#x27;trunc&#x27;]</span><br></pre></td></tr></table></figure></div>
+
+<p>访问这些变量只需要在<code>math</code>后加<code>.</code>即可：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;pi to 4 significant digits = &#123;:.4&#125;&quot;</span>.<span class="built_in">format</span>(math.pi))</span><br><span class="line"><span class="built_in">print</span>(math.log(<span class="number">32</span>, <span class="number">2</span>))</span><br></pre></td></tr></table></figure></div>
+
+<p>输出：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pi to 4 significant digits = 3.142</span><br><span class="line">5.0</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="其他的导入语法"><a href="#其他的导入语法" class="headerlink" title="其他的导入语法"></a>其他的导入语法</h4><p>如果我们之后会经常用到某个库中的函数，在导入时，我们可以给这个库起一个更短的别名：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math <span class="keyword">as</span> mt</span><br><span class="line">mt.pi <span class="comment">#等价于math.pi</span></span><br></pre></td></tr></table></figure></div>
+
+<p>或者这样：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line">mt = math</span><br></pre></td></tr></table></figure></div>
+
+<hr>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> *</span><br><span class="line"><span class="built_in">print</span>(pi, log(<span class="number">32</span>, <span class="number">2</span>))</span><br></pre></td></tr></table></figure></div>
+
+<p>上面的导入方式中，我们不需要使用点语法就直接访问了<code>math</code>库中的变量。<code>import *</code> 让所有 <code>module</code>的变量不需要加<code>.</code>前缀就能直接访问。但是有时候会出问题：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> *</span><br><span class="line"><span class="built_in">print</span>(pi, log(<span class="number">32</span>, <span class="number">2</span>))</span><br></pre></td></tr></table></figure></div>
+
+<p>输出：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---------------------------------------------------------------------------</span><br><span class="line">TypeError                                 Traceback (most recent call last)</span><br><span class="line">&lt;ipython-input-10-5045b296ad83&gt; in &lt;module&gt;</span><br><span class="line">      1 from math import *</span><br><span class="line">      2 from numpy import *</span><br><span class="line">----&gt; 3 print(pi, log(32, 2))</span><br><span class="line"></span><br><span class="line">TypeError: return arrays must be of ArrayType</span><br></pre></td></tr></table></figure></div>
+
+<p>这是因为<code>import *</code>会将库中所有变量都导入；而<code>log</code>在<code>math</code>，<code>numpy</code>之中都有定义，因此之后导入<code>numpy</code>时，原本是<code>math</code>中的<code>log</code>被覆盖为<code>numpy</code>中的定义，导致报错。</p>
+<p>我们可以避免这种情况：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> log, pi</span><br><span class="line"><span class="keyword">from</span> numpy <span class="keyword">import</span> asarray</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="Submodules"><a href="#Submodules" class="headerlink" title="Submodules"></a><code>Submodules</code></h4><p>我们已经看到<code>module</code>中的变量既可以是数，也可以是函数；事实上，还可以是其他的<code>module</code>：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;numpy.random is a&quot;</span>, <span class="built_in">type</span>(numpy.random))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;it contains names such as...&quot;</span>,</span><br><span class="line">      <span class="built_in">dir</span>(numpy.random)[-<span class="number">15</span>:]</span><br><span class="line">     )</span><br></pre></td></tr></table></figure></div>
+
+<p>输出为：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">numpy.random is a &lt;class &#x27;module&#x27;&gt;</span><br><span class="line">it contains names such as... [&#x27;seed&#x27;, &#x27;set_state&#x27;, &#x27;shuffle&#x27;, &#x27;standard_cauchy&#x27;, &#x27;standard_exponential&#x27;, &#x27;standard_gamma&#x27;, &#x27;standard_normal&#x27;, &#x27;standard_t&#x27;, &#x27;test&#x27;, &#x27;triangular&#x27;, &#x27;uniform&#x27;, &#x27;vonmises&#x27;, &#x27;wald&#x27;, &#x27;weibull&#x27;, &#x27;zipf&#x27;]</span><br></pre></td></tr></table></figure></div>
+
+<p>调用<code>random</code>中的函数需要两个<code>.</code>：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Roll 10 dice</span></span><br><span class="line">rolls = numpy.random.randint(low=<span class="number">1</span>, high=<span class="number">6</span>, size=<span class="number">10</span>)</span><br><span class="line">rolls</span><br></pre></td></tr></table></figure></div>
+
+<p>输出：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">array([4, 4, 3, 1, 5, 1, 5, 2, 1, 2])</span><br></pre></td></tr></table></figure></div>
+
+<p>今后我们可能会遇到很多新的数据类型以及函数，比如上例中的<code>array</code>。利用<code>type()</code>，<code>dir()</code>，<code>help()</code>，我们能够初步地了解它们。</p>
+<h4 id="运算符重载"><a href="#运算符重载" class="headerlink" title="运算符重载"></a>运算符重载</h4><p>对于<code>list</code>类型，像<code>[1,2]+10</code>这样的语法会报错。但对于<code>array</code>类型则不会：<code>rolls+10</code>是允许的。对于不同的数据类型，<code>+</code>，<code>=</code>如何操作，定义，取决于设计者怎么想。比如，<code>list</code>的设计者决定不允许向<code>list</code>上加数字；但<code>numpy</code>库的设计者觉得对于<code>array</code>可以。</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rolls &lt;= <span class="number">3</span></span><br></pre></td></tr></table></figure></div>
+
+<p>输出为：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">array([False, False,  True,  True, False,  True, False,  True,  True,</span><br><span class="line">        True])</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="下划线修饰的变量"><a href="#下划线修饰的变量" class="headerlink" title="下划线修饰的变量"></a>下划线修饰的变量</h2><p><a class="link"   target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/36173202" >Python中下划线的5种含义 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1454551" >关于python中带下划线的变量和函数的意义 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h2 id="numpy库"><a href="#numpy库" class="headerlink" title="numpy库"></a>numpy库</h2><ul>
+<li><p>array：数据同类型，方括号访问：<code>a[0,1]</code></p>
+</li>
+<li><p>broadcast，总是从最后对齐。比如shape是(2,3,3)的array a无法和shape(2,3)的array b一起broadcast。</p>
+<blockquote>
+<p>但是可以使用newaxis参数，给array添加新的维度：</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">&gt;a=np.ones((<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>))</span><br><span class="line">&gt;b=np.array([[<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>],[<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>]])</span><br><span class="line">&gt;a*b[ : , : ,np.newaxis]</span><br></pre></td></tr></table></figure></div>
+</blockquote>
+</li>
+<li><p>读取图像时，imshow函数如果数据不是uint8类型，可能会出现意料之外的错误。在显示图像前，通常显式将其转换为uint8</p>
+<div class="highlight-container" data-rel="Py"><figure class="iseeu highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2 <span class="keyword">as</span> cv</span><br><span class="line">img=cv.imread(hello.png)</span><br><span class="line"><span class="built_in">print</span>(img)</span><br><span class="line"><span class="comment">#从输出结果可以看到opencv处理图像默认数据类型是uint8</span></span><br><span class="line"><span class="comment">#输出结果：</span></span><br><span class="line"><span class="comment">#array([[[...],</span></span><br><span class="line"><span class="comment">#        [...],</span></span><br><span class="line"><span class="comment">#        [...]]],dtype=&#x27;uint8&#x27;)</span></span><br><span class="line">a=[<span class="number">2000</span>,<span class="number">100</span>,<span class="number">2</span>]</span><br><span class="line"><span class="built_in">print</span>(np.uint8(a))</span><br><span class="line"><span class="comment">#2000的二进制表示是11111010000</span></span><br><span class="line"><span class="comment">#208的二进制表示是11010000</span></span><br><span class="line"><span class="comment">#输出结果：</span></span><br><span class="line"><span class="comment">#array([208, 100, 2], dtype=uint8)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure></div></li>
+</ul>
+<h2 id="scipy库"><a href="#scipy库" class="headerlink" title="scipy库"></a>scipy库</h2><p>用于科学计算，基于numpy</p>
+<h2 id="matplotlib"><a href="#matplotlib" class="headerlink" title="matplotlib"></a>matplotlib</h2><h3 id="pyplot"><a href="#pyplot" class="headerlink" title="pyplot"></a>pyplot</h3><ul>
+<li>imshow函数默认rgb顺序，和opencv的bgr顺序不同</li>
+</ul>
+<blockquote>
+<p>opencv imread&#x2F;imshow函数读取图片顺序是bgr而非rgb，导致pyplot的imshow函数会显示偏蓝（如果用opencv的imshow不会有问题）。如果想用pyplot的imshow来显示opencv读取的图片，可以用opencv的cvtColor函数（cv2版本的cvtColor函数和cv版本不同功能，注意读文档时区别一下）</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">import</span> cv2</span><br><span class="line">&gt;<span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">&gt;lena=cv2.imread(<span class="string">&quot;lena.jpg&quot;</span>)</span><br><span class="line">&gt;<span class="comment">#plt.imshow(lena)</span></span><br><span class="line">&gt;<span class="comment">#plt.axis(&quot;off&quot;)</span></span><br><span class="line">&gt;<span class="comment">#Converts from BGR to RGB</span></span><br><span class="line">&gt;plt.imshow(cv2.cvtColor(lena, cv2.COLOR_BGR2RGB))</span><br><span class="line">&gt;plt.show()</span><br></pre></td></tr></table></figure></div>
+</blockquote>
+<ul>
+<li>​	必须使用pyplot::show 来显示图像</li>
+</ul>
+<h2 id="opencv库（cv2）"><a href="#opencv库（cv2）" class="headerlink" title="opencv库（cv2）"></a>opencv库（cv2）</h2><ul>
+<li><p>cv2.waitkey()</p>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> cv2.waitKey(<span class="number">10</span>) &amp; <span class="number">0xFF</span> == <span class="number">27</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"><span class="comment">#if we press esc the window closes.27 is escape key in unicode. 0xff is to ensure the same result if numlock is enabled</span></span><br></pre></td></tr></table></figure></div>
+
+<p><a class="link"   target="_blank" rel="noopener" href="https://stackoverflow.com/questions/35372700/whats-0xff-for-in-cv2-waitkey1" >What’s 0xFF for in cv2.waitKey(1)? <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+</li>
+</ul>
+<h2 id="不同进制"><a href="#不同进制" class="headerlink" title="不同进制"></a>不同进制</h2><p>一些例子：</p>
+<ul>
+<li>0xFF：0x&#x2F;0X代表十六进制(hexadecimal)代表二进制的11111111（即255）</li>
+<li>0b11：0b代表二进制，0是为了防止python认为是变量（b11）</li>
+<li>0o11: 0o代表八进制(octal)，0同上</li>
+</ul>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> Python学习</li>
+        <li><strong>作者:</strong> Eva-unit-01</li>
+        <li><strong>创建于
+                :</strong> 2023-04-18 16:32:23</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2023-04-18 17:01:12
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://eva-unit-01.github.io/2023/04/18/python-learning/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
+
+            
+                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
+                
+                    <li class="tag-item mx-0.5">
+                        <a href="/tags/Python/">#Python</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2023/06/30/vscode-remote-docker/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">VSCode连接到远程docker服务器</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2023/03/23/thecatcherintherye/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">The Catcher in the Rye</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        评论
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">目录</div>
+        <div class="page-title">Python学习</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hello-Python%EF%BC%81"><span class="nav-text">Hello, Python！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Hello-python"><span class="nav-text">Hello python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E4%B8%8E%E8%AE%A1%E7%AE%97"><span class="nav-text">数字与计算</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E4%B8%8E%E5%B8%AE%E5%8A%A9"><span class="nav-text">函数与帮助</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%AE%E5%8A%A9"><span class="nav-text">帮助</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0"><span class="nav-text">定义函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Docstrings"><span class="nav-text">Docstrings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A0%E8%BF%94%E5%9B%9E%E7%9A%84%E5%87%BD%E6%95%B0"><span class="nav-text">无返回的函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="nav-text">函数参数的默认值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E5%A4%8D%E5%90%88"><span class="nav-text">函数的复合</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%83%E5%B0%94%E5%8F%98%E9%87%8F%E4%B8%8E%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD"><span class="nav-text">布尔变量与条件判断</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%83%E5%B0%94%E5%8F%98%E9%87%8F"><span class="nav-text">布尔变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%83%E5%B0%94%E8%BF%90%E7%AE%97"><span class="nav-text">布尔运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%83%E5%B0%94%E8%BF%90%E7%AE%97%E7%9A%84%E5%A4%8D%E5%90%88"><span class="nav-text">布尔运算的复合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD"><span class="nav-text">条件判断</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%83%E5%B0%94%E5%8C%96"><span class="nav-text">布尔化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E7%9A%84%E5%BA%8F"><span class="nav-text">列表的序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E6%88%AA%E6%96%AD"><span class="nav-text">列表截断</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E5%88%97%E8%A1%A8"><span class="nav-text">修改列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E7%9B%B8%E5%85%B3%E7%9A%84%E5%87%BD%E6%95%B0"><span class="nav-text">列表相关的函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E6%9B%B2%EF%BC%9Aobject"><span class="nav-text">插曲：object</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8method"><span class="nav-text">列表的一些常用method</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tuples"><span class="nav-text">Tuples</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF-and-list-comprehentions"><span class="nav-text">循环 and list comprehentions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF"><span class="nav-text">循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#list-comprehentions"><span class="nav-text">list comprehentions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%8E%E5%AD%97%E5%85%B8"><span class="nav-text">字符串与字典</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-text">字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E5%85%B8"><span class="nav-text">字典</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%96%E9%83%A8%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-text">外部库的使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%BC%E5%85%A5"><span class="nav-text">导入</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E5%88%92%E7%BA%BF%E4%BF%AE%E9%A5%B0%E7%9A%84%E5%8F%98%E9%87%8F"><span class="nav-text">下划线修饰的变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#numpy%E5%BA%93"><span class="nav-text">numpy库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#scipy%E5%BA%93"><span class="nav-text">scipy库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#matplotlib"><span class="nav-text">matplotlib</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pyplot"><span class="nav-text">pyplot</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#opencv%E5%BA%93%EF%BC%88cv2%EF%BC%89"><span class="nav-text">opencv库（cv2）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8D%E5%90%8C%E8%BF%9B%E5%88%B6"><span class="nav-text">不同进制</span></a></li></ol>
+
+    </div>
+</div>
+        </div>
+    
+</div>
+
+
+
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Eva-unit-01</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        共撰写了 22 篇文章
+                    </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">访问人数</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">总访问量</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">由 <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a> 驱动</span>
+            <span class="text-sm lg:block">主题&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.7.1</a></span>
+        </div>
+        
+        
+            <div>
+                博客已运行 <span class="odometer" id="runtime_days" ></span> 天 <span class="odometer" id="runtime_hours"></span> 小时 <span class="odometer" id="runtime_minutes"></span> 分钟 <span class="odometer" id="runtime_seconds"></span> 秒
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+    
+<script src="/js/libs/Swup.min.js"></script>
+
+<script src="/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/utils.js" type="module"></script>
+
+<script src="/js/main.js" type="module"></script>
+
+<script src="/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
+
+
+
+  
+<script src="/js/libs/Typed.min.js"></script>
+
+  
+<script src="/js/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+    
+<script src="/js/libs/anime.min.js"></script>
+
+
+
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/js/layouts/toc.js" type="module"></script>
+
+<script src="/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
+</body>
+</html>
