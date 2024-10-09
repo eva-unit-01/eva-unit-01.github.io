@@ -18,15 +18,15 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="部署Seafile 专业版docker 官方文档  按照官方文档，下载对应的docker_compose.yml，并修改对应部分，运行即可。官方文档中提示从docker.seafile.top中拉取镜像以及依赖的其他镜像。  需要注意的是，在https:&#x2F;&#x2F;customer.seafile.com&#x2F;中说明文档中写的是从私有仓库docker.seadrive.org中拉取镜像，并且给了密码。通过访问">
+        <meta name="description" content="部署  官方文档  按照官方文档，下载对应的docker_compose.yml，并修改对应部分，运行即可。官方文档中提示从docker.seafile.top中拉取镜像以及依赖的其他镜像。  需要注意的是，在https:&#x2F;&#x2F;customer.seafile.com&#x2F;中说明文档中写的是从私有仓库docker.seadrive.org中拉取镜像，并且给了密码。通过访问docker.sead">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SeafileDockerConfiguration">
 <meta property="og:url" content="https://eva-unit-01.github.io/2024/09/12/SeafileDockerConfiguration/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="部署Seafile 专业版docker 官方文档  按照官方文档，下载对应的docker_compose.yml，并修改对应部分，运行即可。官方文档中提示从docker.seafile.top中拉取镜像以及依赖的其他镜像。  需要注意的是，在https:&#x2F;&#x2F;customer.seafile.com&#x2F;中说明文档中写的是从私有仓库docker.seadrive.org中拉取镜像，并且给了密码。通过访问">
+<meta property="og:description" content="部署  官方文档  按照官方文档，下载对应的docker_compose.yml，并修改对应部分，运行即可。官方文档中提示从docker.seafile.top中拉取镜像以及依赖的其他镜像。  需要注意的是，在https:&#x2F;&#x2F;customer.seafile.com&#x2F;中说明文档中写的是从私有仓库docker.seadrive.org中拉取镜像，并且给了密码。通过访问docker.sead">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-09-12T02:34:18.000Z">
-<meta property="article:modified_time" content="2024-09-12T07:51:59.335Z">
+<meta property="article:modified_time" content="2024-10-09T10:41:20.020Z">
 <meta property="article:author" content="eva-unit-01">
 <meta property="article:tag" content="Seafile">
 <meta property="article:tag" content="docker">
@@ -267,8 +267,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-09-12 15:51:59</span>
-            <span class="mobile">2024-09-12 15:51:59</span>
+            <span class="desktop">2024-10-09 18:41:20</span>
+            <span class="mobile">2024-10-09 18:41:20</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -326,16 +326,38 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <h1 id="部署Seafile-专业版docker"><a href="#部署Seafile-专业版docker" class="headerlink" title="部署Seafile 专业版docker"></a>部署Seafile 专业版docker</h1><ul>
-<li><p><a class="link"   target="_blank" rel="noopener" href="https://cloud.seafile.com/published/seafile-manual-cn/docker/pro-edition/%E7%94%A8Docker%E9%83%A8%E7%BD%B2Seafile.md" >官方文档 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+            <h2 id="部署">部署</h2>
+<ul>
+<li><p><a class="link" 
+ target="_blank" rel="noopener" href="https://cloud.seafile.com/published/seafile-manual-cn/docker/pro-edition/%E7%94%A8Docker%E9%83%A8%E7%BD%B2Seafile.md" >官方文档 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>按照官方文档，下载对应的<code>docker_compose.yml</code>，并修改对应部分，运行即可。官方文档中提示从<code>docker.seafile.top</code>中拉取镜像以及依赖的其他镜像。</p>
 <blockquote>
-<p>需要注意的是，在<code>https://customer.seafile.com/</code>中说明文档中写的是从私有仓库<code>docker.seadrive.org</code>中拉取镜像，并且给了密码。通过访问<code>docker.seadrive.org</code>并登录可以看到，仓库中只有<code>seafile-pro-mc</code>单个镜像而没有依赖镜像。<code>-mc</code>为<code>multi-container</code>缩写。</p>
-</blockquote>
-</li>
-<li><p>遇到的问题：使用npm反向代理http网页之后，无法登录。提示csrf错误，待解决。网页header等概念定义，nginx知识</p>
-</li>
+<p>需要注意的是，在<code>https://customer.seafile.com/</code>中说明文档中写的是从私有仓库<code>docker.seadrive.org</code>中拉取镜像，并且给了密码。通过访问<code>docker.seadrive.org</code>并登录可以看到，仓库中只有<code>seafile-pro-mc</code>单个镜像而没有依赖镜像。<code>-mc</code>为<code>multi-container</code>缩写。也没有最新版本的镜像。</p>
+</blockquote></li>
 </ul>
+<h2 id="docker_compose.yml">docker_compose.yml</h2>
+<ul>
+<li><code>docker_compose.yml</code>位于<code>/mnt/user/appdata/seafile-pro</code>中</li>
+<li><code>-p</code>路径映射中，前面是宿主机目录，后面是容器目录 ## CSRF
+问题
+依照教程下载了docker后，npm反向代理只能访问登录页面，登陆后提示csrf错误。
+参考<a class="link"   target="_blank" rel="noopener" href="https://bbs.seafile.com/t/topic/19409" >CSRF verification
+failed. Origin checking failed <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>之后，能够正常访问。
+期间还参考了以下链接</li>
+<li><a class="link" 
+ target="_blank" rel="noopener" href="https://forum.seafile.com/t/cannot-get-rid-of-403-csrf-verification-failed-on-11-0-6/19632/6" >Cannot
+get rid of 403 csrf verification failed on 11.0.6 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>,
+在npm高级设置中添加了对应location，但是没有变化</li>
+<li><a class="link" 
+ target="_blank" rel="noopener" href="https://www.cnblogs.com/bretzhao/p/11819571.html" >docker安装seafile出现CSRF
+verification failed. Request
+aborted.解决方法 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>,添加了端口号重启seafile docker之后，没有变化</li>
+<li><a class="link" 
+ target="_blank" rel="noopener" href="https://docs.nginx.com/nginx/admin-guide/web-server/web-server/" >Configuring
+NGINX and NGINX Plus as a Web Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>，了解基本语法</li>
+</ul>
+<p>## 数据备份与恢复
+从6.x升级到11.x跨度太大，直接下载所有数据重新上传。</p>
 
         </div>
 
@@ -350,7 +372,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-09-12 15:51:59
+                    :</strong> 2024-10-09 18:41:20
             </li>
         
         <li>
@@ -478,7 +500,7 @@
     <div class="post-toc">
         <div class="toc-title">目录</div>
         <div class="page-title">SeafileDockerConfiguration</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2Seafile-%E4%B8%93%E4%B8%9A%E7%89%88docker"><span class="nav-text">部署Seafile 专业版docker</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2"><span class="nav-text">部署</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#docker_compose.yml"><span class="nav-text">docker_compose.yml</span></a></li></ol>
 
     </div>
 </div>
