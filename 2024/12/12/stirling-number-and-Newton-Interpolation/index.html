@@ -13,16 +13,20 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://eva-unit-01.github.io/tags/seafile/"/>
+    <link rel="canonical" href="https://eva-unit-01.github.io/2024/12/12/stirling-number-and-newton-interpolation/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://eva-unit-01.github.io/tags/Seafile/index.html">
+        <meta name="description" content="Introduction We begin our exploration with this interesting question: \[ \text{For given degree m, find the sum of: }\\ \sum\limits_{k&#x3D;0}^n k^m \binom{n}{k} \] To solve this question for a gener">
+<meta property="og:type" content="article">
+<meta property="og:title" content="stirling-number-and-Newton-Interpolation">
+<meta property="og:url" content="https://eva-unit-01.github.io/2024/12/12/stirling-number-and-Newton-Interpolation/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Introduction We begin our exploration with this interesting question: \[ \text{For given degree m, find the sum of: }\\ \sum\limits_{k&#x3D;0}^n k^m \binom{n}{k} \] To solve this question for a gener">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-12-12T01:47:14.000Z">
+<meta property="article:modified_time" content="2024-12-12T01:50:24.255Z">
 <meta property="article:author" content="eva-unit-01">
 <meta name="twitter:card" content="summary">
     
@@ -36,7 +40,7 @@
     
     <title>
         
-            标签: Seafile -
+            stirling-number-and-Newton-Interpolation -
         
         Eva-unit-01&#39;s Studio
     </title>
@@ -227,47 +231,284 @@
             <div class="main-content">
 
                 
-                    <div class="tag-container">
-	<div class="tag-name">
-		<i class="fa-solid fa-tag"></i>&nbsp;Seafile
-	</div>
-	<div class="tag-post-list">
-		
-<div class="archive-list-container">
-    
-        <section class="archive-item mb-spacing-unit last:mb-0">
-            <div class="archive-item-header flex flex-row items-center mb-2">
-                <span class="archive-year font-semibold text-3xl mr-2">2024</span>
-                <span class="archive-year-post-count text-xs md:text-sm font-bold rounded-small bg-third-background-color py-[2px] px-[10px] border border-border-color">1</span>
-            </div>
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
             
-            <ul class="article-list pl-0 md:pl-8 text-lg leading-[1.5]">
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">stirling-number-and-Newton-Interpolation</h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/eva-unit-01.jpg">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">Eva-unit-01</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv3</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-12-12 09:47:14</span>
+        <span class="mobile">2024-12-12 09:47:14</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-12-12 09:50:24</span>
+            <span class="mobile">2024-12-12 09:50:24</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
+
+    
+        <span class="article-categories article-meta-item">
+            <i class="fa-regular fa-folders"></i>&nbsp;
+            <ul>
+                
                 
                     
+                        
+                        <li>
+                            <a href="/categories/Math/">Math</a>&nbsp;
+                        </li>
                     
-                         <!-- Close the previous LI if not the first item -->
-                        <li class="article-item space-y-2 px-6 pt-10 pb-2 text-xl relative border-l-2 border-border-color" date-is='09-12'>
-                    
-                    <a href="/2024/09/12/SeafileDockerConfiguration/" class="block w-fit">
-                        <span class="article-title my-0.5 text-2xl">SeafileDockerConfiguration</span>
-                    </a>
                     
                 
-                </li> <!-- Ensure the last item is properly closed -->
             </ul>
-        </section>
+        </span>
+    
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
 
-	</div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h2 id="introduction">Introduction</h2>
+<p>We begin our exploration with this interesting question:</p>
+<p><span class="math display">\[
+\text{For given degree m, find the sum of: }\\
+\sum\limits_{k=0}^n k^m \binom{n}{k}
+\]</span></p>
+<p>To solve this question for a general m, we start by observing the
+result for $ m = 0,1,2$.</p>
+<p>For <span class="math inline">\(m=0\)</span>, the result is <span
+class="math inline">\(2^{n}\)</span>.</p>
+<p>For <span class="math inline">\(m=1\)</span>, the result is: <span
+class="math display">\[
+\begin{aligned}
+\sum\limits_{k=0}^n k\binom{n}{k}=&amp;\sum\limits_{k=0}^n k \frac{n}{k}
+\binom{n-1}{k-1} \\
+=&amp; n 2^{n-1}
+\end{aligned}
+\]</span></p>
+<p>For m = 2, the result is: <span class="math display">\[
+\begin{aligned}
+\sum\limits_{k=0}^n (k(k-1)+k)\binom{n}{k}=&amp;\sum\limits_{k=0}^n
+n(n-1)\binom{n-2}{k-2}+n\binom{n-1}{k-1}\\
+=&amp; n(n-1)2^{n-2}+n 2^{n-1}
+\end{aligned}
+\]</span></p>
+<p>Generally, since for binomials we have <span
+class="math inline">\((k)_i \binom{n}{k} = (n)_i
+\binom{n-i}{k-i}\)</span>, we can deduce the result for any m. Here
+<span class="math inline">\((k)_i\coloneqq k(k-1) \dots (k-i+1)\)</span>
+is the <strong>falling factorials</strong>.</p>
+<p>To express $ k^m $ as spans of falling factorials $1, k, k(k-1),
+k(k-1)(k-2), , k(k-1)(k-2)(k-m+1) $, we aim to write it as:</p>
+<p><span class="math display">\[
+k^m = \sum_{n=0}^m c_n (k)_n
+\]</span></p>
+<h2 id="stirling-number">Stirling Number</h2>
+<p>In combinatorics, stirling number of the second kind <span
+class="math inline">\(S(m,n)\)</span> is defined to represent the
+aforementioned coefficient <span class="math inline">\(c_n\)</span>,
+which is: <span class="math display">\[
+   k^m = \sum_{n=0}^m S(m, n) (k)_n
+   \]</span></p>
+<h3 id="properties-of-stirling-number">Properties of Stirling
+Number</h3>
+<ul>
+<li><span class="math inline">\(S(m, n) = n \cdot S(m-1, n) + S(m-1,
+n-1)\)</span></li>
+<li><span class="math inline">\(S(0, 0) = 1, \quad S(m, 0) = 0 \text{
+for } m &gt; 0, \quad S(0, n) = 0 \text{ for } n &gt; 0.\)</span></li>
+</ul>
+<p>Here are some common Stirling number. - <span
+class="math inline">\(S(3, 1) = 1\)</span>, - <span
+class="math inline">\(S(3, 2) = 3\)</span>, - <span
+class="math inline">\(S(3, 3) = 1\)</span>.</p>
+<h2 id="newton-interpolation">Newton Interpolation</h2>
+<p>On the other hand, expressing <span
+class="math inline">\(k^m\)</span> via <span
+class="math inline">\((k)_i\)</span> can also be regarded as a form of
+Newton interpolation, where the interpolation points are chosen as <span
+class="math inline">\(0,1,\dots, m-1\)</span> for function <span
+class="math inline">\(k^m\)</span>.</p>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> stirling-number-and-Newton-Interpolation</li>
+        <li><strong>作者:</strong> Eva-unit-01</li>
+        <li><strong>创建于
+                :</strong> 2024-12-12 09:47:14</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2024-12-12 09:50:24
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://eva-unit-01.github.io/2024/12/12/stirling-number-and-Newton-Interpolation/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
+
+            
+                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
+            
+        </li>
+    </ul>
 </div>
 
-<div class="tag-paginator">
-	<div class="paginator">
-    <span class="page-number current">1</span>
+            </div>
+        
+
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2024/12/12/multivariate-Taylor-Expansion/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">multivariate-Taylor-Expansion</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/12/12/love-star/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">love-star</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        评论
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
 </div>
 
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">目录</div>
+        <div class="page-title">stirling-number-and-Newton-Interpolation</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#introduction"><span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#stirling-number"><span class="nav-text">Stirling Number</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#properties-of-stirling-number"><span class="nav-text">Properties of Stirling
+Number</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#newton-interpolation"><span class="nav-text">Newton Interpolation</span></a></li></ol>
+
+    </div>
 </div>
+        </div>
+    
+</div>
+
 
 
                 
@@ -350,6 +591,27 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
