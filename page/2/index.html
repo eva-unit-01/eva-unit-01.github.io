@@ -94,7 +94,119 @@
     
     
     
-<meta name="generator" content="Hexo 7.3.0"></head>
+<meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
@@ -232,7 +344,7 @@
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">22</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">23</div>
         <div class="label text-third-text-color text-sm">标签</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -240,7 +352,7 @@
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">29</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">32</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -268,12 +380,12 @@
                 <div class="author flex flex-col justify-center my-2.5 mx-0">
     <div class="name">Eva-unit-01</div>
     
-        <div class="label">Lv3</div>
+        <div class="label">Lv4</div>
     
 </div>
                 <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">22</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">23</div>
         <div class="label text-third-text-color text-sm">标签</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
@@ -281,7 +393,7 @@
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">29</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">32</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -298,6 +410,228 @@
                 
                     <div class="home-content-container">
     <ul class="home-article-list">
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2024/09/19/Derivative-w-r-t-vector-and-matrix-variables/">
+                            对向量/矩阵自变量的求导
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            Introduction
+In optimization theory and machine learning filed, vector/matrix
+value functions with vector/matrix are commonly seen and the derivative
+of such functions are often required. When c...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Sep 19 2024 21:56:57 GMT+0800">
+                
+                    2024-09-19
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Math/">Math</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Math/">Math</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/09/19/Derivative-w-r-t-vector-and-matrix-variables/">阅读全文<span class="seo-reader-text">对向量/矩阵自变量的求导</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2024/09/12/SeafileDockerConfiguration/">
+                            Seafile docker配置
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            部署
+
+官方文档 
+按照官方文档，下载对应的docker_compose.yml，并修改对应部分，运行即可。官方文档中提示从docker.seafile.top中拉取镜像以及依赖的其他镜像。
+
+需要注意的是，在https://customer.seafile.com/中说明文档中写的是从私有仓库docker.seadrive.org中拉取镜像，并且给了密码。通过访问docker.s...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Sep 12 2024 10:34:18 GMT+0800">
+                
+                    2024-09-12
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/Code/">Code</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/Seafile/">Seafile</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/tags/docker/">docker</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/09/12/SeafileDockerConfiguration/">阅读全文<span class="seo-reader-text">Seafile docker配置</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2023/07/12/video-notes/">
+                            视频笔记
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            [英字|Liam Porritt]只要一分钟就能每周省下20小时，四个给忙碌社畜的好习惯分享
+每次只专注于一件事，就像看电影一样🔗 BV1ns4y147F5-[00:33] 
+
+降低切换处理事情的频率
+
+按照项目分类
+按照任务分类
+可以考虑不同电脑桌面对应不同项目&#x2F;任务
+
+
+
+
+在开始工作之前提前思考
+
+解决问题的方式
+工具
+
+
+并行任务，比如可以同时进行脑力和身体的活动
+
+
+t...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Wed Jul 12 2023 19:43:21 GMT+0800">
+                
+                    2023-07-12
+                
+            </span>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2023/07/12/video-notes/">阅读全文<span class="seo-reader-text">视频笔记</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
         
             <li class="home-article-item">
 
@@ -802,240 +1136,11 @@ Python每句代码后没有标点分隔；因此区分代码块靠的是代码�
                 </div>
             </li>
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2022/09/04/nlp/">
-                            NLP:重塑心灵
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            Chap1 什么是NLPNLP：Neuro Linguistic Programming
-基本精神：12条前提假设
-Chap2 信念系统信念系统：信念，价值，规条（BVR）三者形成的系统
-信念信念：对“事情应该是怎样的”或者“事情就是这样的”的主观判断
-种类：
-
-定义式
-因果式
-规条式
-判断式
-
-形成途径：
-
-亲身经验
-观察他人经验
-他人灌输
-自我总结
-
-妨碍成长的信念：会使一个人减少生活得...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sun Sep 04 2022 10:35:19 GMT+0800">
-                
-                    2022-09-04
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/%E8%AF%BB%E4%B9%A6%E8%AE%B0%E5%BD%95/">读书记录</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/nlp/">nlp</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2022/09/04/nlp/">阅读全文<span class="seo-reader-text">NLP:重塑心灵</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2022/08/30/%E5%A5%87%E7%89%B9%E7%9A%84%E4%B8%80%E7%94%9F/">
-                            奇特的一生
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            
-每个月到月底他都要做小结，画了一些图，列一些表，到年终，又根据每月小结做一份年度总结。
-
-只计算纯时间（花在这项工作上的时间），而非毛时间（计算了间歇，休息）
-
-“工作中的任何间歇，我都要创除。我计算的是纯时间，”柳比歇夫写道，“纯时间要比毛时间少得多。所谓毛时间，就是你花在这项工作上的时间。 “常常有人说，他们一天工作十四五个小时。这样的人可能是有的。可是拿纯时间来说，我一天干不了那么多...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Tue Aug 30 2022 18:08:58 GMT+0800">
-                
-                    2022-08-30
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/%E8%AF%BB%E4%B9%A6%E8%AE%B0%E5%BD%95/">读书记录</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/%E6%97%B6%E9%97%B4/">时间</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2022/08/30/%E5%A5%87%E7%89%B9%E7%9A%84%E4%B8%80%E7%94%9F/">阅读全文<span class="seo-reader-text">奇特的一生</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2022/08/30/%E6%8A%8A%E6%97%B6%E9%97%B4%E5%BD%93%E6%9C%8B%E5%8F%8B/">
-                            把时间当朋友
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            第0章：困境
-“没时间了”，是“时间恐慌症”患者脑子里唯一反复闪现的一句话。巨大的压力，极度的恐慌，使“患者”身上综合了一切矛盾：他们既勤奋又懒惰，既聪明又愚蠢，既勇敢又懦弱，既满怀希望又分分秒秒面临绝望，既充满自信又随时随地体会自卑……
-但是，生活中明显有另外一些人——尽管数量上并不占优——在用另外一种状态生活。他们从容，他们优雅，他们善于化解各种压力，安静地去做他们认为应该做的事情，并总...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Tue Aug 30 2022 18:07:00 GMT+0800">
-                
-                    2022-08-30
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/%E8%AF%BB%E4%B9%A6%E8%AE%B0%E5%BD%95/">读书记录</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/%E6%97%B6%E9%97%B4/">时间</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2022/08/30/%E6%8A%8A%E6%97%B6%E9%97%B4%E5%BD%93%E6%9C%8B%E5%8F%8B/">阅读全文<span class="seo-reader-text">把时间当朋友</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
     </ul>
 
     <div class="home-paginator px-7 py-5">
         <div class="paginator">
-    <a class="extend prev" rel="prev" href="/"><i class="fa-regular fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa-regular fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa-regular fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa-regular fa-angle-right"></i></a>
 </div>
 
     </div>
@@ -1065,7 +1170,7 @@ Chap2 信念系统信念系统：信念，价值，规条（BVR）三者形成�
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        共撰写了 29 篇文章
+                        共撰写了 32 篇文章
                     </span>
                     
                 </p>
